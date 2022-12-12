@@ -45,7 +45,7 @@ def main():
 
     
     page_selection = st.sidebar.radio("Try", page_options)
-    articles_df = pd.read_csv('articles2.csv')
+    articles_df = pd.read_csv('articles.csv')
     
     models = ['Content Base: Similar items based on image embeddings', 
               'Content Base: Similar items based on text embeddings', 
