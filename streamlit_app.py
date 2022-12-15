@@ -64,7 +64,7 @@ def main():
 
     if page_selection == "Find similar items":
 
-        articles_rcmnds = pd.read_csv('results/articles_rcmnds_2.csv')
+        articles_rcmnds = pd.read_csv('results/articles_rcmnds.csv')
 
         articles = articles_rcmnds.article_id.unique()
         get_item = st.sidebar.button('User Views')
