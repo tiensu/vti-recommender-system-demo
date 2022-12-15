@@ -29,7 +29,7 @@ def main():
     """
     
     #inseting image in the sidebar
-    st.sidebar.image('vti.png', use_column_width=True)
+    st.sidebar.image('vti_jp.png', use_column_width=True)
     sidebar_header = '''This is a demo to illustrate a recommender system that finds similar items to a given clothing article or recommend \
         items for a customer using 5 different approaches'''
     
@@ -64,10 +64,10 @@ def main():
 
     if page_selection == "Find similar items":
 
-        articles_rcmnds = pd.read_csv('results/articles_rcmnds.csv')
+        articles_rcmnds = pd.read_csv('results/articles_rcmnds_2.csv')
 
         articles = articles_rcmnds.article_id.unique()
-        get_item = st.sidebar.button('Get Random Item')
+        get_item = st.sidebar.button('User Views')
         
         if get_item:
             
